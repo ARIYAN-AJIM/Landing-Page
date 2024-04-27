@@ -1,0 +1,91 @@
+@font-face {
+    font-family: roxie rosa;
+    src: url(Font/roxie_rossa/Roxie\ rossa.otf);
+}
+@font-face {
+    font-family: roxie rosa2;
+    src: url(Font/roxie_rossa/Roxie\ rossa.ttf);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Sacramento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roxie rosa2;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-photo/abstract-paper-background-concept_23-2148812690.jpg?w=826&t=st=1693781271~exp=1693781871~hmac=bf4fd7a98e1746713e79a1a81e66c347cedb639fae9a79335c9c032436311589');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1{
+    user-select: none;
+    font-size: 8vw;
+    line-height: 1;
+    font-weight: 300;
+    color: #000;
+    opacity: .9;
+    /* background-image: linear-gradient(to right, #edf261, #ffcd6a, #ffad9a, #ffa1d0, #e7a8f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.photo{
+    position: relative;
+    width: 20vw;
+    height: 27vw;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.photo img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).8s;
+    transform-origin: 100% 0;
+    transform: rotate(-80deg);
+}
+
+.photo img:nth-child(1){
+    top: 0;
+    transform: rotate(0deg);
+}
+
+.photo #btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #ddb96a;
+    color: #ffff;
+    font-weight: 200;
+    margin: 0 94%;
+    margin-top: .2vw;
+    cursor: pointer;
+}
